@@ -1,0 +1,37 @@
+Runtime Analysis for Worst Case Big-O Notation
+
+*****************************************************
+
+Task 0:
+
+The big O notation for task 0 can be expressed as O(1).
+There are no loops in the statement.
+
+
+Task 1:
+The big O notation for task 1 is O(2n). We can eliminate the 2 and leave the notation as O(n.)
+This is because there are two for loops.
+
+
+Task 2:
+
+There are two for loops in the program. One for time spent  and another for the dictionary.
+In this case the for loops are not nested and so the Big O notation is O(An). Where A is a constant (3).
+We can eliminate the constant and leave the Notation as O(n)
+
+Task 3:
+
+Part A;
+The for loop for iterating through the call list has a Big O of O(n). The nested for loop does not have length n as in the case of the first for loop and so it can be considered as a constant, i.e. O(1) has iterates through the  and another for loop for the printing of the list. The sorted() function also has a big O of O(nlogn)
+Hence the Big O notation can be given as: n + nlogn +n = 2n + nlogn.
+In the worst case scenario, we can ignore the 2 for the overall notation to become: n + nlog(n) 
+
+Part B;
+In this case, the Big O Notation is O(n^2).
+This is because there is a nested for loop. And also although there are other for loops accounting for
+itereation through the items, we are considering the worst case condition and hence the other terms can be eliminated.
+
+Task 4:
+There are two for loops for the iterating through the calls and text files, and so the Big O notation can be given as:
+O(n) + O(n) = O(2n). But the 2 can be discarded for the big O to become : O(n)
+Finally, the results are also being sorted and so the complete complexity becomes O(nlog(n))
