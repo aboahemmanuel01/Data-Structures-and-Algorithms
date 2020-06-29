@@ -45,7 +45,6 @@ def duplicate_number(arr):
     for num in arr:
         current_sum += num
     
-    
     # Traverse from 0 to (length of array-1) to get the expected_sum
     # Alternatively, you can use the formula for sum of an Arithmetic Progression to get the expected_sum
     
@@ -55,15 +54,8 @@ def duplicate_number(arr):
     for i in range(len(arr) - 1):
         expected_sum += i
     
-    
     # The difference between the 
     return current_sum - expected_sum
-
-
-# <span class="graffiti-highlight graffiti-id_t54gljc-id_6q2yj6n"><i></i><button>Show Solution</button></span>
-
-# In[5]:
-
 
 def test_function(test_case):
     arr = test_case[0]
@@ -73,50 +65,26 @@ def test_function(test_case):
         print("Pass")
     else:
         print("Fail")
-
-
-# In[6]:
-
-
 arr = [0, 0]
-solution = 0
+#solution = 0
 
 test_case = [arr, solution]
 test_function(test_case)
-
-
-# In[7]:
-
 
 arr = [0, 2, 3, 1, 4, 5, 3]
-solution = 3
-
+#solution = 3
 test_case = [arr, solution]
 test_function(test_case)
-
-
-# In[8]:
-
 
 arr = [0, 1, 5, 4, 3, 2, 0]
-solution = 0
+#solution = 0
 
 test_case = [arr, solution]
 test_function(test_case)
-
-
-# In[9]:
-
 
 arr = [0, 1, 5, 5, 3, 2, 4]
-solution = 5
+#solution = 5
 
 test_case = [arr, solution]
 test_function(test_case)
-
-
-# In[ ]:
-
-
-
 
