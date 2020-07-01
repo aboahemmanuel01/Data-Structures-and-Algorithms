@@ -85,9 +85,7 @@ def swap_nodes(head, position_one, position_two):
     
     return new_head
 
-
 # ### Test - Let's test your function
-
 def test_function(test_case):
     head = test_case[0]
     left_index = test_case[1]
