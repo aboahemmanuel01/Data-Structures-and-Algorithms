@@ -1,5 +1,5 @@
 ## Show_Me_The_Data_Structures_Project
-The solution to the projects can be found at: <i class="icon-cog"></i> **[Show_Me_The_Data_Structures_Project](https://github.com/aboahemmanuel01/Show_Me_The_Data_Structures_Project)**
+The solution to these projects can be found at: <i class="icon-cog"></i> **[Show_Me_The_Data_Structures_Project](https://github.com/aboahemmanuel01/Show_Me_The_Data_Structures_Project)**
 
 This repo contains a variety of projects related to different forms of data structures
 The projects are divided into six sections which cover a variety of topics related to datat strucutres.
