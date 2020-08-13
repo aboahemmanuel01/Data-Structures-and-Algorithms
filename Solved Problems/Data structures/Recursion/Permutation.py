@@ -14,13 +14,13 @@
 # For example, take [0, 1, 2] as the original input list:<br>
 # 
 # 1. Start with a blank compoundList [[]]. 
-This is actually the last call of recursive function stack. Pick the element `2` of original input list, making the compoundList as [[2]].
+#This is actually the last call of recursive function stack. Pick the element `2` of original input list, making the compoundList as [[2]].
 # 
 # 2. Pick next element 1 of original input list, and add this element at position 0, and 1 for each list of previous compoundList.
  #We will require to create copy of all lists of previous compoundList, and add the new element.** Now, the compoundList will become `[[1, 2], [2, 1]]`.<br><br>
 # 
 # 3. Pick next element `0` of original input list, and add this element at position 0, 1, and 2 for each list of previous compoundList. 
-Now, the compoundList will become `[[0, 1, 2], [1, 0, 2], [1, 2, 0], [0, 2, 1], [2, 0, 1], [2, 1, 0]]` .<br><br>
+#Now, the compoundList will become [[0, 1, 2], [1, 0, 2], [1, 2, 0], [0, 2, 1], [2, 0, 1], [2, 1, 0]]
 
 # Helper function
 import copy                                           # `copy` module
@@ -85,7 +85,6 @@ def permute(inputList):
                 finalCompoundList.append(bList)
                 
     return finalCompoundList
-
 
 # Test  function
 
