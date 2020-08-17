@@ -44,7 +44,7 @@ def return_permutations(string, index):
 
     return output
 
-# Test - Let's test your function
+# Test - function
 
 def test_function(test_case):
     string = test_case[0]
