@@ -30,7 +30,9 @@ print ("Pass" if  (is_palindrome("abba")) else "Fail")
 print ("Pass" if not (is_palindrome("Udacity")) else "Fail")
 
 
+
 '''
+
 # AN ALTERNATIVE SOLUTION TO THE PROBLEM ###
 
 
@@ -52,12 +54,14 @@ def recurse_input(input):
 
 
 def is_palindrome(input):
+
     """
     Return True if input is palindrome, False otherwise.
     
     Args:
        input(str): input to be checked if it is palindrome
     """
+    
     word = input 
     if input is None:
         return True
