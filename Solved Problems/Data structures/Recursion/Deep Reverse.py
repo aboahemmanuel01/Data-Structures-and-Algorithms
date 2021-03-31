@@ -17,6 +17,8 @@ def deep_reverse(arr):
 
     reversed_items = [] 
     
+    for item in reversed(arr):
+    
         if type(item) is list:
             item = deep_reverse(item)
         
@@ -24,7 +26,9 @@ def deep_reverse(arr):
         reversed_items.append(item)
 
     return reversed_items
-
+   
+   
+# Test cases definition
 def test_function(test_case):
     arr = test_case[0]
     solution = test_case[1]
