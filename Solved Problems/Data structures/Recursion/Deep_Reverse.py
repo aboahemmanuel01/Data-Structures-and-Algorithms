@@ -17,7 +17,7 @@ def deep_reverse(arr):
 
     reversed_items = [] 
     
-    for item in reversed(arr):
+    for item in reversed(arr):  # alternatively, you could also do: for item in arr[::-1]:
     
         if type(item) is list:
             item = deep_reverse(item)
