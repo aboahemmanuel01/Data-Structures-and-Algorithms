@@ -15,3 +15,30 @@ The final objective of the puzzle is to move all disks from the source rod to th
 """
 
 
+def tower_of_Hanoi(num_disks):
+    """
+    :param: num_disks - number of disks
+    
+    Given the number of disks num_disks as the input parameter, 
+    the recursive function tower_of_Hanoi() prints the "move" steps in order to move num_disks number of disks 
+    from Source to Destination using the help of Auxiliary rod.
+    """
+    
+    tower_of_hanoi_output(num_disks, 'S', 'A', 'D')
+    
+    
+def tower_of_hanoi_output(num_disks, source, auxiliary, destination):
+    
+    if num_disks == 0:
+        return
+    
+    if num_disks == 1:
+        print("{} {}".format(source, destination))
+        return
+    
+    tower_of_hanoi_output(num_disks - 1, source, destination, auxiliary)
+    print("{} {}".format(source, destination))
+    
+    tower_of_hanoi_output(num_disks - 1, auxiliary, source, destination)
+    
+        
