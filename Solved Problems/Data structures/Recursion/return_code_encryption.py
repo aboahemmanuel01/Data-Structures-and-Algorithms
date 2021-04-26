@@ -8,7 +8,6 @@ For example:
 number = 123
 codes_possible = ["aw", "abc", "lc"]
 
-
 Assumption: Input number will never contain any 0s
 
 '''
@@ -31,8 +30,7 @@ def all_codes(number):
         
         alphabet = get_alphabet(remainder)
         for idx, num in enumerate(output_100):
-            output_100[idx] = num + alphabet
-            
+            output_100[idx] = num + alphabet       
             
     # calculation for right-most digit e.g. if number = 1123, this calculation is meant for 3
     remainder = number%10
@@ -48,7 +46,6 @@ def all_codes(number):
     output.extend(output_100)
     output.extend(output_10)
     
-    
     return output
     
     
@@ -60,9 +57,7 @@ def get_alphabet(number):
     '''
         
     return chr(number + 96)
-  
-  
-  
+ 
   
 # Test cases
 def test_function(test_case):
